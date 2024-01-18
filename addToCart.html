@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addToCart</title>
+    <link href="assets/img/z img.jpg" rel="icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/addToCart.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+        <div class="container my-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="row ">
+                <div class="col-md-12 logo">
+                    <a href="ZWIGATO.html" target="_self"><img src="img/web-logo.png" alt="" width="100px"></a>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ZWIGATO.html"> <i class="fa-solid fa-house icon"></i> &nbsp;Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addToCart.html"> <i class="fa-solid fa-basket-shopping icon"></i>&nbsp;Order</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addRestaurant.html"> <i class="fa-solid fa-plus icon"></i>&nbsp;Add Restaurant</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html" target="_blank"> <i class="fa-solid fa-address-card icon"></i>&nbsp;About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login_page.html"> <i class="fa-solid fa-circle-user icon"></i>&nbsp;Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="container" class="container" style="background-color: white; margin-top: 25px; border-radius: 10px;">
+        <div class="row item-row">
+            <div class="col-md-4 item-img">
+                <img src="https://b.zmtcdn.com/data/dish_photos/33f/8d77775cf3fed5e8b099447533d4833f.jpg?output-format=webp"
+                    alt="">
+            </div>
+            <div class="col-md-8 item-description">
+                <p class="item-name">Tandoori Paneer</p>
+                <p class="item-price"> ₹ 319 <span><select class="add-quantity">
+                            <option value="Qty : 1">Qty : 1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option><i class="fa-solid fa-chevron-down"></i>
+                        </select></p>
+                <p class="item-msg">It's our signature. <br> Paneer, Crunchy Onions & Green Capsicum, spicy Red Paprika
+                    with delicious Tandoori Sauce</p>
+            </div>
+        </div>
+
+        <div class="row item-row">
+            <div class="col-md-4 item-img">
+                <img src="https://b.zmtcdn.com/data/pictures/1/2601361/51f85c677ba604d8d5145b508bc2e337_o2_featured_v2.jpg"
+                    alt="">
+            </div>
+            <div class="col-md-8 item-description">
+                <p class="item-name">Chhole Kulche </p>
+                <p class="item-price"> ₹ 200 <span><select class="add-quantity">
+                            <option value="Qty : 1">Qty : 1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option><i class="fa-solid fa-chevron-down"></i>
+                        </select></p>
+                <p class="item-msg">Sagar Gaire Fast Food</p>
+            </div>
+        </div>
+
+        <div class="row item-row">
+            <div class="col-md-4 item-img">
+                <img src="https://b.zmtcdn.com/data/pictures/9/19472739/237a999efdce27a96432bfd463800e4d_o2_featured_v2.jpg"
+                    alt="">
+            </div>
+            <div class="col-md-8 item-description">
+                <p class="item-name">Steam Momos</p>
+                <p class="item-price"> ₹ 200 <span><select class="add-quantity">
+                            <option value="Qty : 1">Qty : 1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option><i class="fa-solid fa-chevron-down"></i>
+                        </select></p>
+                <p class="item-msg">The Gaint Panda <br> Asian, Fast Food, Chinese, Beverages, Desserts</p>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-md-12 show-price">
+                <span class="total-amt"> Total amount :  ₹ 719 /-</span> </span>
+                <button class="place-order-btn" id="place-order-btn" onclick="orderPlaced()"> Place Order</button>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-12 show-price">
+                <span class="total-amt"> Total amount : ₹ 719 /-</span> </span>
+                <a href=""><button class="place-order-btn" id="place-order-btn" onclick="orderPlaced()" > Place
+                        Order</button></a>
+                        <button class="place-order-btn" id="clear-btn" onclick="clear1(1)"> Clear Cart
+                        </button>
+
+                       
+                <!-- <div id="order-place-msg"> </div> -->
+            </div>
+        </div>
+
+
+
+    </div> <!-- main container -->
+  
+    <div id="empty-cart" style="display: none;">
+        <h1 id="clear-msg" style="display: flex;justify-content: center;align-items: center;height: 400px;"></h1>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="js/addToCart.js"></script>
+
+</body>
+
+</html>

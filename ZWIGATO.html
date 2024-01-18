@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZWIGATO</title>
+
+  <link href="assets/img/z img.jpg" rel="icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<!-- slider 2 css link  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/ZWIGATO.css" />
+
+<body>
+  <div class="container-fluid"> <!-- container-fluid start -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="menu">
+          <button class="left-menu-icon">
+            <i id="first-icon" class="fa-solid fa-bars" onclick="navbar1()"></i>
+            <i id="second-icon" class="fa-solid fa-bars" onclick="navbar2()"></i>
+          </button>
+
+          <div class="nav-bar" id="nav-bar">
+            <!-- nav bar start -->
+            <nav>
+              <ul>
+                <li class="list-item">
+                  <a href="ZWIGATO.html"><i class="fa-solid fa-house icon"></i> Home</a>
+                </li>
+                <li class="list-item">
+                  <a href="addToCart.html"><i class="fa-solid fa-basket-shopping icon"></i> Order</a>
+                </li>
+                <li class="list-item">
+                  <a href="addRestaurant.html"> <i class="fa-solid fa-plus icon"></i> Add Restaurant</a>
+                </li>
+                <li class="list-item">
+                  <a href="aboutMe.html" target="_blank"><i class="fa-solid fa-address-card icon"></i> About Me</a>
+                </li>
+                <li class="list-item">
+                  <a href="login_page.html"><i class="fa-solid fa-circle-user icon"></i> Login</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- nav bar end -->
+
+          <div class="col-md-4">
+            <div class="logo">
+              <a href="#"><img src="img/web-logo.png" alt="" width="100px" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- row close -->
+  </div> <!-- container-fluid close -->
+
+
+  <div class="container-fluid">
+    <!-- slider row  -->
+    <div class="row">
+      <div class="col-md-12 slider">
+
+        <div class="slider-section">
+          <div class="slide" style="display: block;" id="slide1">
+            <img src="https://cdn.pixabay.com/photo/2016/06/07/17/15/yogurt-1442034_1280.jpg" alt="">
+          </div>
+
+          <div class="slide" id="slide2">
+            <img src="https://cdn.pixabay.com/photo/2014/05/23/23/17/dessert-352475_1280.jpg" alt="">
+          </div>
+
+          <div class="slide" id="slide3">
+            <img src="https://cdn.pixabay.com/photo/2016/03/23/15/00/ice-cream-1274894_1280.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="https://cdn.pixabay.com/photo/2016/08/28/10/49/takeaway-1625652_1280.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="https://cdn.pixabay.com/photo/2021/02/28/09/38/food-6056720_1280.jpg" alt="">
+          </div>
+
+          <!-- <div class="slide">
+            <img
+              src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/06/fast-food-assortment-soda.jpg?quality=82&strip=1"
+              alt="">
+          </div> -->
+        </div>
+
+        <div class="slider-text">
+          <p class="p1">🅷🆄🅽🅶🆁🆈? 🅶🅴🆃 🅳🅸🆂🅲🅾🆄🅽🆃🅴🅳 🅱🅸🆃🅴🆂! </p>
+          <p class="p2">🆈🆄🅼 🆆🅸🆃🅷🅾🆄🆃 🆃🅷🅴 🅷🅸🅶🅷 🆂🆄🅼!</p>
+        </div>
+
+        <div class="slider-button">
+          <button class="left-button" onclick="slider(-1)"><i class="fa-solid fa-angles-left icon"></i></button>
+          <button class="right-button" onclick="slider(+1)"><i class="fa-solid fa-angles-right icon"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row best-offer-row1">
+      <div class="offer_heading"> BEST OFFER </div>
+
+      <div class="col-md-4 best-offer">
+        <a href="best-offer.html">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/318cab799713a9739a56dc9d24659a8e"
+            alt="" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" width="100%" />
+        </a>
+        <!-- <h5>Italian</h5>
+        <p>
+          !!-Order Now-!! <br />
+          Get up to 40% off
+        </p> -->
+      </div>
+
+      <div class="col-md-4 best-offer">
+        <a href="best-offer.html">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/9c1b7104ad92fb3082e62dbdefe118fa" alt="" data-aos="zoom-in"
+            data-aos-easing="linear" data-aos-duration="5000" width="100%" />
+        </a>
+        <!-- <h5>Cake, Cherry</h5>
+        <p>
+          !!-Order Now-!! <br />
+          Get up to 25% off
+        </p> -->
+      </div>
+
+      <div class="col-md-4 best-offer">
+        <a href="best-offer.html" target="_blank">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/49cfabd8c7ca5bd1ab44c55b177b0a5b" alt="" data-aos="zoom-in"
+            data-aos-easing="linear" data-aos-duration="5000" width="100%" />
+        </a>
+        <!-- <h5>Pizza</h5>
+        <p>
+          !!-Order Now-!! <br />
+          Get up to 55% off
+        </p> -->
+      </div>
+    </div>
+
+    <div class="row best-offer-row2">
+
+      <div class="col-md-4 best-offer">
+        <a href="best-offer.html">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/7e0d4dc0794fba64f5d9944900bcac09" alt="" data-aos="zoom-in"
+            data-aos-easing="linear" data-aos-duration="5000" width="100%" />
+        </a>
+        <!-- <h5>Choclate Cookies</h5>
+        <p>Get up to 15% off</p> -->
+      </div>
+      <div class="col-md-4 best-offer">
+        <a href="best-offer.html" target="_blank">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/7dec1c62b4e539323ea54bae5e152c62" alt="" data-aos="zoom-in"
+            data-aos-easing="linear" data-aos-duration="5000" width="100%" />
+        </a>
+        <!-- <h5>Rose Cake</h5>
+        <p>!! Do fast !!</p> -->
+      </div>
+      <div class="col-md-4 best-offer">
+        <a href="best-offer.html" target="_blank">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/7004bb67da2bc79145552e05a4605d6e" alt="" data-aos="zoom-in"
+            data-aos-easing="linear" data-aos-duration="5000" width="100%" />
+        </a>
+        <!-- <h5>Hamburger Burger</h5>
+        <p>!! Orer now fast !!</p> -->
+      </div>
+    </div>
+
+
+    <!-- Brand log row-1 -->
+    <div class="row brand-logo-1">
+      
+      <div class="offer_heading"> TOP BRANDS FOR YOU </div>
+
+      <div class="col-md-2 brand-logo">
+        <a href="https://www.zomato.com/bhopal/sagar-gaire-fast-food-jhangirabad/order">
+          <img
+            src="https://yt3.googleusercontent.com/kbGyAyNchmwxdlqfsP9TYzA2uwGPZU4aymiSZDWN5p0F3vgbsicWS8GM94iwZ1kT7FsKWsRtoA=s900-c-k-c0x00ffffff-no-rj"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Sagar Gaire</p>
+      </div>
+
+      <div class="col-md-2 brand-logo">
+        <a href="https://www.zomato.com/bhopal/sharma-vishnu-fast-food-bhel"><img
+            src="https://b.zmtcdn.com/data/brand_creatives/logos/aaa86c706fe235dd78dec0dd32d43d6b_1550745886.png?output-format=webp"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Sharma And Vishnu Fast Food</p>
+      </div>
+
+      <div class="col-md-2 brand-logo">
+        <a href="https://www.manohardairy.com/"><img
+            src="https://b.zmtcdn.com/data/brand_creatives/logos/304f7e8f12ed82f7aa1e23f076a43e65_1617972508.png?output-format=webp"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Manohar Dairy</p>
+      </div>
+
+      <div class="col-md-2 brand-logo">
+        <a href="https://www.bapukikutia.in/"><img
+            src="https://b.zmtcdn.com/data/brand_creatives/logos/ddc425ee369b0169900fec2738bfff26_1592480548.png?output-format=webp"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Bapu ki Kutia</p>
+      </div>
+
+      <div class="col-md-2 brand-logo">
+        <a href="https://pizzaonline.dominos.co.in/"><img
+            src="https://cache.dominos.com/olo/6_118_2/assets/build/images/promo/dominos_social_logo.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Dominos</p>
+      </div>
+
+      <div class="col-md-2 brand-logo">
+        <a href="https://www.burgerking.in/"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Burger_King_logo_%281999%29.svg/200px-Burger_King_logo_%281999%29.svg.png"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Burger King</p>
+      </div>
+    </div>
+    <!-- Row 1 closed-->
+
+    <!-- Brand logo row-2 -->
+    <div class="row brand-logo-2"> 
+
+      <div class="col-md-2 brand-logo">
+        <a href="https://www.bakenshake.in/"><img
+            src="https://b.zmtcdn.com/data/brand_creatives/logos/36a794295319f643d4ec60fd74773639_1618410875.png?output-format=webp"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Bake N Shake</p>
+      </div>
+
+      <div class="col-md-2 brand-logo" >
+        <a href="https://www.mcdonalds.com/us/en-us.html"><img
+            src="https://static.vecteezy.com/system/resources/previews/020/190/610/original/mcdonalds-logo-mcdonald-icon-free-free-vector.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Mac Donald</p>
+      </div>
+
+      <div class="col-md-2 brand-logo" >
+        <a href="https://www.mcdonalds.com/us/en-us.html"><img
+            src="https://www.pizzahut.co.in/order/images/logos/logo_home@x2.2058c7f78a870b6322dc0dc0ecb77325.png"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Pizza-Hut</p>
+      </div>
+      <div class="col-md-2 brand-logo" >
+        <a href="https://online.kfc.co.in/"><img
+            src="https://b.zmtcdn.com/data/brand_creatives/logos/466f8fc74274145f3b21795c3d21816d_1589432952.png?output-format=webp"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>KFC</p>
+      </div>
+      <div class="col-md-2 brand-logo" >
+        <a href="https://www.haldirams.com/"><img
+          data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" src="https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2022/01/1-13-1024x512.jpg" alt="" /></a>
+        <p>HaldiRam</p>
+      </div>
+      <div class="col-md-2 brand-logo" >
+        <a href="https://ganeshamfastfood.com/"><img
+            src="https://b.zmtcdn.com/data/brand_creatives/logos/c197a17c005ee55881364e63b4641525_1573707759.png?output-format=webp"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" /></a>
+        <p>Ganesham Fast Food</p>
+      </div>
+    </div>
+    <!-- Row 2 closed -->
+
+    <!-- VEG -->
+    <div class="row veg-row">
+
+      <div class="offer_heading"> VEG Offers </div>
+
+      <div class="col-md-3 veg">
+        <a href="#">
+          <a href="veg.html"><img
+              src="https://cdn.pixabay.com/photo/2022/03/02/12/42/paneer-7043097_1280.jpg" id="veg-img-1"
+              data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="9000" onmouseover="veg1(1)()"
+              onmouseout="veg2(2)()" alt="" /></a>
+        </a>
+        <p class="veg-item-name">Paneer Tikka Masala</p>
+        <span class="timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4 . 42 mins</span>
+        <p>North Indian, Snacks <br> Gulmohar Colony</p>
+      </div>
+
+      <div class="col-md-3 veg">
+        <a href="#"><a href="veg.html"><img
+              src="https://cdn.pixabay.com/photo/2017/11/15/07/07/indian-food-2951094_1280.jpg" id="veg-img-2"
+              data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="9000" onmouseover="veg3()"
+              onmouseout="veg4()" alt="" /></a>
+        </a>
+        <p class="veg-item-name">Thali</p>
+        <span class="timing"><span style="color: 	#b7dd29; font-size: 1.5rem;">&#9733;</span> 3.8 . 56 mins</span>
+        <p>North Indian, Maharashtrian, Thalis <br> Saket Nagar</p>
+      </div>
+
+      <div class="col-md-3 veg">
+        <a href="#"><a href="veg.html"><img
+              src="https://cdn.pixabay.com/photo/2022/03/02/12/43/dish-7043103_1280.jpg" id="veg-img-3"
+              data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="9000" onmouseover="veg5()"
+              onmouseout="veg6()" alt="" /></a>
+        </a>
+        <p class="veg-item-name">Veg Biryani</p>
+        <span class="timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4.2 . 24 mins</span>
+        <p>Biryani, North Indian, Panjabi <br> Maharana Pratap Nagar</p>
+      </div>
+
+      <div class="col-md-3 veg">
+        <a href="#"><a href="veg.html"><img
+              src="https://cdn.pixabay.com/photo/2022/01/27/07/34/masala-dosa-6971359_1280.jpg" id="veg-img-4"
+              data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="9000" onmouseover="veg7()"
+              onmouseout="veg8()" alt="" /></a>
+        </a>
+        <p class="veg-item-name">Masala Dosa</p>
+        <snap class="timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4.3 . 35 mins</snap>
+        <p>South Indian, Indian, North Indian <br> BHEL</p>
+        <p></p>
+      </div>
+
+    </div>
+
+    <!-- non veg row-->
+    <div class="row non-veg-row">
+
+      <div class="offer_heading">NON-VEG Offers</div>
+
+      <div class="col-md-3 non-veg">
+        <a href="non-veg.html"><img
+            src="https://hblimg.mmtcdn.com/content/hubble/img/ttd_images_march/mmt/activities/m_Chidambaram_Southernspice_Non_Veg_Restaurant_2_l_667_1000.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" id="non-img-1" onmouseover="non1()"
+            onmouseout="non2()" /> </a>
+        </a>
+        <p class="non-item-name">Chicken Leg</p>
+        <span class="non-timing"><span style="color: 	#b7dd29; font-size: 1.5rem;">&#9733;</span> 3.7 . 30 mins</span>
+        <p>Fresh chicken are marinated <br> By Mughal Darbar</p>
+      </div>
+
+      <div class="col-md-3 non-veg">
+        <a href="non-veg.html" >
+          <img
+            src="https://content.jdmagicbox.com/comp/kolhapur/h8/0231px231.x231.190112190224.f8h8/catalogue/hotel-hankare-shaniwar-peth-kolhapur-restaurants-1l4qn8oepk.jpeg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" id="non-img-2"
+            onmouseover="non3()" onmouseout="non4()" /></a>
+        <p class="non-item-name">Non-Veg Platter</p>
+        <span class="non-timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4.1 . 27 mins</span>
+        <p>[3pcs] Mutton Galouti, [4pcs] Chicken Seekh Kebab <br> By Faasos - Wraps & Rolls</p>
+      </div>
+
+      <div class="col-md-3 non-veg">
+        <a href="non-veg.html">
+          <img src="https://hungryforever.net/wp-content/uploads/2017/06/tandoori-chicken-biryani.jpg" id="non-img-3"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" onmouseover="non5()"
+            onmouseout="non6()" alt="" /></a>
+        <p class="non-item-name">Chicken Biryani</p>
+        <span class="non-timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4.3 . 25 mins</span>
+        <p>Best Quality Rice Fragrant With Spices <br> By Behrouz Biryani</p>
+      </div>
+
+      <div class="col-md-3 non-veg">
+        <a href="non-veg.html" >
+          <img src="https://i.pinimg.com/736x/2c/3c/74/2c3c74d67bf2c214609b58754a42c835.jpg" id="non-img-4"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" onmouseover="non7()"
+            onmouseout="non8()" alt="" /></a>
+        <p class="non-item-name">Fry Fish</p>
+        <span class="non-timing"><span style="color: #b7dd29; font-size: 1.5rem;">&#9733;</span> 3.9 . 37 mins</span>
+        <p>Spicy fish with chicken patty loaded <br> chilly jalapenos and veggies</p>
+      </div>
+
+    </div>
+
+    <!-- Chinees row -->
+    <div class="row chinees-row">
+
+      <div class="offer_heading">CHINEES Platter</div>
+
+      <div class="col-md-3 chinees">
+        <a href="chinees.html"><img
+            src="https://www.chilipeppermadness.com/wp-content/uploads/2023/06/Gochujang-Noodles-Recipe-SQ.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" id="chinees-img-1"
+            onmouseover="chinees1()" onmouseout="chinees2()" alt="" /></a>
+        <p class="chinees-item-name">Noodles</p>
+        <span class="chinees-timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4.0 . 22 mins</span>
+        <p>By Sharma & Vishnu Fast Food <br> MP Nagar</p>
+      </div>
+
+      <div class="col-md-3 chinees">
+        <a href="chinees.html">
+          <img
+            src="https://www.thoughtco.com/thmb/vxSDwjBDPMPvHvH4cZlewubRWvI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-679384712-59198e2d3df78c7a8c00d763.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" alt="" id="chinees-img-2"
+            onmouseover="chinees3()" onmouseout="chinees4()" /></a>
+        <p class="chinees-item-name">Momos</p>
+        <span class="chinees-timing"><span style="color: #b7dd29; font-size: 1.5rem;">&#9733;</span> 3.7 . 26 mins </span>
+        <p>Introducing Green Delight Momos <br> By Wow! Momo</p>
+      </div>
+      <div class="col-md-3 chinees">
+        <a href="chinees.html">
+          <img src="https://themom100.com/wp-content/uploads/2013/09/vegetarian-greek-pasta-211-768x768.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" id="chinees-img-3"
+            onmouseover="chinees5()" onmouseout="chinees6()" alt="" /></a>
+        <p class="chinees-item-name">Pasta</p>
+        <span class="chinees-timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4.0 . 29 mins</span>
+        <p>Freshly boiled penne pasta tossed with garlic <br> By Sharma & Vishnu Fast Food</p>
+      </div>
+      <div class="col-md-3 chinees">
+        <a href="chinees.html">
+          <img src="https://im.whatshot.in/img/2019/Jul/54771047-844853405858667-571719446244839671-n-1563803878.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" id="chinees-img-4"
+            onmouseover="chinees7()" onmouseout="chinees8()" alt="" /></a>
+        <p class="chinees-item-name">Chinees Platter</p>
+        <span class="chinees-timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span> 4.1 . 42 mins</span>
+        <p>Veg Galouti, Kaju Seekh, Crispy Corn Stick <br> By Biryani By Kilo</p>
+      </div>
+    </div>
+
+    <!-- top rated row-->
+    <div class="row top-rated-row">
+
+      <div class="offer_heading">TOP RATED</div>
+
+      <div class="col-md-4 top-rated">
+        <a href="top-rated.html">
+          <img src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F1984%2Ftrend20180808073140.jpg"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" id="top-img-1" onmouseover="top1()"
+            onmouseout="top2()" alt="" /></a>
+        <p class="top-rated-item-name">Pizza</p>
+        <span class="top-rated-timing"><span style="color: #ffe234; font-size: 1.5rem;">&#9733;</span>3.5 . 32 mins . ₹300 FOR TWO</span>
+        <p>Pizza, Pastas, Italian, Snacks <br> Da Pizzeria</p>
+      </div>
+      <div class="col-md-4 top-rated">
+        <a href="top-rated.html">
+          <img src="https://cdn.pixabay.com/photo/2022/01/27/07/34/masala-dosa-6971358_1280.jpg" id="top-img-2"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" onmouseover="top3()"
+            onmouseout="top4()" alt="" /></a>
+        <p class="top-rated-item-name">Masala Dosa</p>
+        <span class="top-rated-timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span>4.2 . 22 mins . ₹200 FOR TWO</span>
+        <p>South Indian, Beverages, Desserts <br> Sankalp - The Taste of South</p>
+      </div>
+      <div class="col-md-4 top-rated">
+        <a href="top-rated.html"><img
+            src="https://b.zmtcdn.com/data/pictures/1/2601361/51f85c677ba604d8d5145b508bc2e337_o2_featured_v2.jpg?output-format=webp"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" id="top-img-3" onmouseover="top5()"
+            onmouseout="top6()" alt="" /></a>
+        <p class="top-rated-item-name">Chhole Kulche</p>
+        <span class="top-rated-timing"><span style="color: #ffe234; font-size: 1.5rem;">&#9733;</span>3.4 . 23-31 mins . ₹400 FOW FIVE</span>
+      <p>North Indian, Fast Food, Italian, South Indian <br> Sagar Gaire </p>
+      </div>
+    </div>
+
+    <!-- people's favourite row-->
+    <div class="row people-fav-row">
+      
+      <div class="offer_heading">PEOPLE'S FAVOURITE</div>
+
+      <div class="col-md-4 people-fav">
+        <a href="people-fav.html">
+          <img src="https://cdn.pixabay.com/photo/2013/01/15/11/22/panipuri-74974_1280.jpg" id="fav-img-1"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" onmouseover="fav1()"
+            onmouseout="fav2()" alt="" /></a>
+        <p class="people-fav-item-name">Pani-Puri</p>
+        <span class="people-fav-timing"><span style="color: 	#b7dd29; font-size: 1.5rem;">&#9733;</span>3.7 . 43 mins</span>
+        <p>15 Puri with fresh, mint water <br> By Ganesham Fast Food</p>
+      </div>
+      <div class="col-md-4 people-fav">
+        <a href="people-fav.html">
+          <img src="https://ik.imagekit.io/shortpedia/Voices/wp-content/uploads/2021/03/Pav-Bhaji4.jpg" id="fav-img-2"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" onmouseover="fav3()"
+            onmouseout="fav4()" alt="" /></a>
+        <p class="people-fav-item-name">Pav Bhaji</p>
+        <span class="people-fav-timing"><span style="color: #57e32c; font-size: 1.5rem;">&#9733;</span>4.2 . 38 mins</span>
+        <p>Fluffy butter toasted buns(2 piece) <br> By Bapu ki Kutia</p>
+      </div>
+
+      <div class="col-md-4 people-fav">
+        <a href="people-fav.html">
+          <img src="https://www.tarladalal.com/collections/rcp_chole-samosa-chaat-28.jpg" id="fav-img-3"
+            data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000" onmouseover="fav5()"
+            onmouseout="fav6()" alt="" /></a>
+        <p class="people-fav-item-name">Chat Papdi</p>
+        <span class="people-fav-timing"><span style="color:	#b7dd29; font-size: 1.5rem;">&#9733;</span>3.7 . 31 mins </span>
+        <p>4 papdis dressed with red and green chutney <br> along with curd, sev onions <br> By Manohar Dairy and Restaurant</p>
+      </div>
+    </div>
+  </div>
+  <!-- container-fluid end -->
+
+  <!-- slider 2 start  -->
+  <div class="offer_heading">Inspiration for your first order</div>
+  <div class="swiper mySwiper" style="padding: 20px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/771/9407f4ccc4bc14173dac18f8c4824771.png" alt="" width="100%">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/3f5/0a66657d2f83e860f3108314164b03f5.jpg" alt="" width="100%">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/pictures/7/2600047/c1cbdd28f4a556999dd961a1fe2c37c2.jpg" alt=""
+          width="100%">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/2ac/03c10b0097d30e5fd485965c627d32ac.png" alt="" width="100%">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/77a/70033edf4e8ade8cab451efae1faa77a.jpg" alt="" width="100%">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/pictures/3/20794443/c035309b3edc32022fcb99be7da84539_o2_featured_v2.jpg"
+          alt="" width="100%">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/1fc/2cf6a89d6f38037519cee39dbe7041fc.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/8a6/eef533af1bbbb5b575922b84e48d58a6.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/769/f23257e992085ed8bc2bdfb08e25a769.jpg" alt="" width="100%" />
+      </div>
+
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/6b8/65a47550757e4907bb055d49d7c816b8.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://b.zmtcdn.com/data/dish_photos/774/c906c1ca1e26c9ae00cb41a91947b774.jpg" alt="" width="100%" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+
+  <!-- footer started  -->
+  <footer id="footer-row">
+    <div class="container-fluid">
+      <div class="footer">
+        <div class="footer-sections">
+          <ul class="footer-ul" style="width: 300px">
+            <h4>ABOUT ZWIGATO</h4>
+            <li><a href="">Who We Are</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Work With Us</a></li>
+            <li><a href="">Investor Relations</a></li>
+            <li><a href="">Report Fraud</a></li>
+            <li><a href="">Press Kit</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections">
+          <ul class="footer-ul" style="width: 300px">
+            <h4>PARTENERS</h4>
+            <li><a href="https://www.zomato.com/india">Zomato</a></li>
+            <li><a href="https://blinkit.com/">Blinkit</a></li>
+            <li><a href="https://www.feedingindia.org/">Feeding India</a></li>
+            <li><a href="https://www.swiggy.com/">Swiggy</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections">
+          <ul class="footer-ul" style="width: 300px">
+            <h4>FOR RESTAURANTS</h4>
+            <li><a href="">Partner With Us</a></li>
+            <li><a href="">Apps For You</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections">
+          <ul class="footer-ul" style="width: 300px">
+            <h4>SOCIAL LINKS</h4>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in social-icon"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social-icon"></i></a>
+            <a
+              href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                class="fa-brands fa-twitter social-icon"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube social-icon"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social-icon"></i></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; ZWIGATO. All Rights are reserved. <br> Developed by - Rishi Chaurasia</p>
+    </div>
+  </footer>
+  <!-- footer end  -->
+
+  <div class="popUp" id="popUp">
+    <div class="content">
+      <button onclick="popUP_close()" class="popUp_button"><i class="fa-solid fa-xmark"></i></button>
+
+      <img src="https://chandigarhmetro.com/wp-content/uploads/2021/07/HDFC.jpg" alt="" width="100%">
+    </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- slider 2 js  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="js/ZWIGATO.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+</body>
+
+</html>
